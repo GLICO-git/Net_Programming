@@ -37,7 +37,9 @@
 - `광역 통신망` (WAN, Wide Area Network)는 두 개 이상의 근거리 네트워크(LAN)가 넓은 지역에 걸쳐 연결되어 있는 것
 - WAN은 국가와 국가 간을 연결하는 매우 범위가 넓은 네트워크 이다
 
-<center><img src="./img/Overview/Wan.jpg" width="70%" height="70%"/></center>
+<center>
+<img src="img/Overview/Wan.jpg" width="70%" height="70%"/>
+</center>
 
 ***
 ## 통신 방식
