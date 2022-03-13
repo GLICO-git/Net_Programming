@@ -1,7 +1,7 @@
 <!--
-1. 이미지(가운데 정렬, 70%)
+1. 이미지(가운데 정렬, 60%)
 <p align = "center">
-<img src="이미지링크" width="70%" height="70%"/>
+<img src="이미지링크" width="60%"/>
 </p>
 
 1-2. 이미지 캡션 달기
@@ -14,7 +14,6 @@
  1. [네트워크 이해](#네트워크-이해)
  1. [프로토콜(Protocol)](#프로토콜protocol)
  1. [네트워크 계층 구조](#네트워크-계층-구조)
- 1. [네트워크 장비](#네트워크-장비)
 
 ***
 # 네트워크 이해
@@ -31,7 +30,7 @@
 - `광역 통신망` (WAN, Wide Area Network)는 두 개 이상의 근거리 네트워크(LAN)가 넓은 지역에 걸쳐 연결되어 있는 것
 - WAN은 국가와 국가 간을 연결하는 매우 범위가 넓은 네트워크 이다
 
-<p align = "center"><img src="./img/Overview/Wan.JPG" width="70%" height="70%"/>
+<p align = "center"><img src="./img/Overview/Wan.JPG" width="60%"/>
 <p align = "center">
 WAN</p>
 
@@ -47,7 +46,7 @@ WAN</p>
 - `클라이언트` : 서버에서 보내주는 데이터 서비스를 수신하는 컴퓨터
 <br>-> 서버는 클라이언트(사용자)한테 요청 받아 서비스를 제공하는데, 이렇게 구성된 시스템을 `클라이언트/서버` 시스템이라고 한다.
 
-<p align ="center"><img src="./img/Overview/서버:클라이언트.JPG" width="70%" height="70%"/></center>
+<p align ="center"><img src="./img/Overview/서버:클라이언트.JPG" width="60%"/></center>
 <p align = "center">
 클라이언트/서버
 </p>
@@ -55,7 +54,7 @@ WAN</p>
 ## 유니캐스트
 - 네트워크에서 가장 많이 사용하는 <span style="color: #dcffe4">유니캐스트(Unicast)는 서버와 클라이언트 간의 일대일(1:1) 통신 방식</span>을 말한다
 - 자신의 <span style="color:#f56">MAC(Media Access Control Address)</span> 주소와 수신지 MAC 주소가 동일하다면 전송된 데이터를 수신하고, 자신의 LAN카드 MAC주소가 수신지 주소가 아니라고 판단되면 해당 프레임은 버림
-<p align = "center"><img src="./img/Overview/유니캐스트.JPG" width="70%" height="70%"/>
+<p align = "center"><img src="./img/Overview/유니캐스트.JPG" width="60%"/>
 <p align ="center">
 Unicast 방식</p>
 
@@ -65,7 +64,7 @@ Unicast 방식</p>
 - 브로드캐스트의 MAC주소는 `FF-FF-FF-FF-FF-FF`로 미리 정해져 있다
 - <span style="color: #dcffe4">다른 라우터를 찾거나, 라우터끼리 데이터를 교환하거나, 서버가 서비스를 제공하려고 모든 클라이언트에게 알릴 때</span> 등 여러 상황에서 사용
 - 수신을 원치 않는 클라이언트도 수신하게 되므로 <span style="color: #dcffe4">네트워크 *성능 저하*를 가져올 수 있음</span>
-<p align = "center"><img src="./img/Overview/브로드캐스트.JPG" width="70%" height="70%"/>
+<p align = "center"><img src="./img/Overview/브로드캐스트.JPG" width="60%"/>
 <p align ="center">
 Broadcast 방식</p>
 
@@ -73,7 +72,7 @@ Broadcast 방식</p>
 ## 멀티캐스트
 - 멀티캐스트는 전송하려는 <span style="color: #f56">특정 그룹에게만 한 번에 전송</span>할 수 있기 때문에 `유니캐스트`처럼 반복해서 보낼 필요가 없고, `브로드캐스트`처럼 전송받을 필요가 없는 컴퓨터에 보내지 않아도 됨
 
-<p align = "center"><img src="./img/Overview/멀티캐스트.JPG" width="70%" height="70%"/>
+<p align = "center"><img src="./img/Overview/멀티캐스트.JPG" width="60%"/>
 <p align ="center">
 Multicast 방식</p>
 
