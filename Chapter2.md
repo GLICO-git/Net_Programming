@@ -14,8 +14,8 @@
  1. [소켓과 입출력](#소켓과-입출력)
     - [파일 디스크립터 (File Descriptor)](#파일-디스크립터file-descriptor)
     - [리눅스의 기본 입출력 함수들](#리눅스의-기본-입출력-함수들)
-        - [open()](#open())
-        - [read()](#read())
+        - [open()](#open)
+        - [read()](#read)
         - [write()](#write)
         - [close()](#close)
         - [실습 1](#실습-1)
@@ -33,7 +33,7 @@
     - 운영체제에 의해 제공이 되는 소프트웨어적인 장치
     - 소켓은 프로그래머에게 데이터 송수신에 대한 물리적, 소프트웨어적 세세한 내용을 신경 쓰지 않게 함
 
-<center><img src="img/Chapter2/socket.JPG" width="60%"/></center>
+<p align = "center"><img src="img/Chapter2/socket.JPG" width="60%"/></p>
 <p align = "center">
 네트워크에서의 소켓
 </p>
@@ -42,7 +42,7 @@
 - `Socket API`를 이용하여 컴퓨터 네트워크를 사용하는 프로그램을 작성하는 것
 - `Socket API`는 서로 다른 (또는 같은) 호스트상에서 실행되는 두 개의 (또는 이상의) 프로세스들이 컴퓨터 네트워크를 사용하여 통신하기 위해 제공되는 도구
 
-<center><img src="img/Chapter2/socketAPI.JPG" width="60%"/></center>
+<p align = "center"><img src="img/Chapter2/socketAPI.JPG" width="60%"/></p>
 <p align = "center">
 Socket API
 </p>
@@ -248,7 +248,7 @@ int main(){
     - 컴퓨터 네트워크의 궁극적인 목적은 ***다른 호스트상에서 실행되고 있는 프로세스 간의 통신임***
     - 프로세스는 다음과 같이 프로세스 ID(PID)로 식별가능함
 
-<center><img src="img/Chapter2/PID.jpeg" width="60%"/></center>
+<p align = "center"><img src="img/Chapter2/PID.jpeg" width="60%"/></p>
 <p align = "center">
 프로세스 ID (PID)
 </p>
@@ -257,7 +257,7 @@ int main(){
 - 하지만, 다른 호스트에 존재하는 프로세스와 통신을 위해 PID가 필요하지는 않음
 - 네트워크 계층 주소 (IP주소)를 통해 전달 된 ***데이터는 전송계층에서 제공하는 포트를 통해 프로세스에 전달됨***
 
-<center><img src="img/Chapter2/4layer.jpeg" width="60%"/></center>
+<p align = "center"><img src="img/Chapter2/4layer.jpeg" width="60%"/></p>
 <p align = "center">
 전송 계층 프로토콜
 </p>
