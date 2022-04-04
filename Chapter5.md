@@ -266,7 +266,7 @@ void error_proc();
 
 int main(int argc, char** argv){
 	int srvSd, clntSd;
-	struct sockadrr_in srvAddr, clntAddr;
+	struct sockaddr_in srvAddr, clntAddr;
 	int clntAddrLen, readLen, strLen;
 	char rBuff[BUFSIZE];
 	if(argc != 2){
@@ -328,7 +328,7 @@ void error_proc();
 
 int main(int argc, char** argv){
 	int clntSd;
-	struct sockadrr_in clntAddr;
+	struct sockaddr_in clntAddr;
 	int clntAddrLen, readLen, recvByte, maxBuff;
 	char rBuff[BUFSIZE];
 	char wBuff[BUFSIZE];
