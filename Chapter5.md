@@ -268,7 +268,7 @@ int main(int argc, char** argv){
 	int srvSd, clntSd;
 	struct sockaddr_in srvAddr, clntAddr;
 	int clntAddrLen, readLen, strLen;
-	char rBuff[BUFSIZE];
+	char rBuff[BUFSIZ];
 	if(argc != 2){
 		printf("Usage: %s [port] \n", argv[0]);
 		exit(1);
@@ -330,8 +330,8 @@ int main(int argc, char** argv){
 	int clntSd;
 	struct sockaddr_in clntAddr;
 	int clntAddrLen, readLen, recvByte, maxBuff;
-	char rBuff[BUFSIZE];
-	char wBuff[BUFSIZE];
+	char rBuff[BUFSIZ];
+	char wBuff[BUFSIZ];
 
 	if(argc != 3){
 		printf("Usage: %s [IP Address] [port] \n", argv[0]);
@@ -352,12 +352,12 @@ int main(int argc, char** argv){
 	}
 
 	while(1){
-		fgets(wBuff, BUFSIZE-1, stdin);
+		fgets(wBuff, BUFSIZ-1, stdin);
 		readLen = strlen(wBuff);
 		if(readLen < 2) continue;
 		write(clntSd, wBuff, readLen-1);
 		recvByte = 0;
-		maxBuff = BUFSIZE-1;
+		maxBuff = BUFSIZ-1;
 		do{
 			recvByte += read(clntSd, rBuff, maxBuff);
 			maxBuff -= recvByte;
