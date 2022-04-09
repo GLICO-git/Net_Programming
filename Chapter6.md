@@ -25,8 +25,8 @@ Host A의 VM에 `Guest A(NAT) 10.0.2.15`, `Guest B(Bridge) 192.168.0.16`이 있�
 
 - 포트포워딩이 설정될 경우, `Guest B`, `Host B`, `Host C`가 `192.168.0.a`의 포트 번호 xxxx로 패킷을 보낼 경우,<br>
 해당 패킷은 `Guest A`의 서버로 전달 됨
-<p align = "center"><img src="img/Chapter6/port1.PNG" width="60%"/></p>
-<p align = "left"><img src="img/Chapter6/port2.PNG" width="20%"/></p>
+<p align = "center"><img src="img/Chapter6/port1.png" width="60%"/></p>
+<p align = "left"><img src="img/Chapter6/port2.png" width="20%"/></p>
 <p align = "center">
 포트포워딩
 </p>
@@ -55,7 +55,7 @@ TCP|UDP
 ***
 # UDP 서버/클라이언트 분석
 
-<p align = "center"><img src="img/Chapter6/srv:clnt.PNG" width="60%"/></p>
+<p align = "center"><img src="img/Chapter6/srv:clnt.png" width="60%"/></p>
 <p align = "center">
 UDP 서버-클라이언트 예제 동작
 </p>
@@ -202,7 +202,7 @@ void errorProc(const char* str){
 ```
 
 ***
-<p align = "center"><img src="img/Chapter6/sendto,recvfrom.PNG" width="60%"/></p>
+<p align = "center"><img src="img/Chapter6/sendto,recvfrom.png" width="60%"/></p>
 <p align = "center">
 sendto.c, recvfrom.c 실행
 </p>
@@ -219,12 +219,12 @@ sendto.c, recvfrom.c 실행2
 ***
 - UDP 서버-클라이언트 모델의 경우 2가지가 존재한다
 
-<p align = "center"><img src="img/Chapter6/srv,clnt1.PNG" width="60%"/></p>
+<p align = "center"><img src="img/Chapter6/srv,clnt1.png" width="60%"/></p>
 <p align = "center">
 UDP 서버-클라이언트 모델1
 </p>
 
-<p align = "center"><img src="img/Chapter6/srv,clnt2.PNG" width="60%"/></p>
+<p align = "center"><img src="img/Chapter6/srv,clnt2.png" width="60%"/></p>
 <p align = "center">
 UDP 서버-클라이언트 모델2
 </p>
